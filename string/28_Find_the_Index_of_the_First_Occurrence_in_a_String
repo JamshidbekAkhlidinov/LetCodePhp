@@ -1,0 +1,21 @@
+<?php
+
+class Solution {
+
+    /**
+     * @param String $haystack
+     * @param String $needle
+     * @return Integer
+     */
+    function strStr($haystack, $needle) {
+        $exp = explode($needle,$haystack);
+        if(count($exp) > 1){
+            return strlen($exp[0]);
+        }
+        return -1;
+    }
+}
+
+$obj = new Solution();
+
+echo $obj->strStr("hello","ll");
