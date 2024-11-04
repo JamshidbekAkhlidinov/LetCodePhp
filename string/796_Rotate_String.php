@@ -24,7 +24,7 @@ class Solution {
     */
       function rotateString($s, $goal) {
         $count = strlen($s);
-        $s2 = $s;
+        $s2 = $s;   
         for ($i = 0; $i < $count; $i++) {
             $s = substr($s, 1) . $s[0];
             if ($s === $goal) {
