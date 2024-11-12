@@ -1,8 +1,6 @@
 <?php
 
-
 class Solution {
-
     /**
      * @param Integer $n
      * @return Integer
@@ -21,7 +19,6 @@ class Solution {
         return $count ;
     }
 }
-
 $obj = new Solution();
 echo $obj->countTriples(5)."\n";
 echo $obj->countTriples(10)."\n";
